@@ -1,0 +1,12 @@
+# Yahoo Finance series are downloaded by fetch.py and must not be committed
+data/cache/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.DS_Store

@@ -1,0 +1,4 @@
+series,best_days,in_drawdown_gt20,in_drawdown_gt10,within_5_days_of_a_worst_day
+S&P 500 price (no dividends),50,47,49,27
+S&P 500 total return,50,30,44,31
+SPY ETF adjusted close (after fees),50,28,42,30

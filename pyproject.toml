@@ -1,0 +1,28 @@
+[project]
+name = "market-base-rates"
+version = "0.1.0"
+description = "Reproducible base rates for the US stock market: long-run returns, CAPE, missing the best days, waiting in cash, drawdowns, all-time highs, real cash yield, lump sum vs DCA."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.0",
+    "openpyxl>=3.1",   # Damodaran .xlsx
+    "xlrd>=2.0",       # Shiller .xls
+]
+
+[project.optional-dependencies]
+fetch = ["yfinance"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+py-modules = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::UserWarning:openpyxl"]
