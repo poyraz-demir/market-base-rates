@@ -15,7 +15,7 @@ counts, with the caveats spelled out in
 ## Reproduce
 
 ```bash
-git clone <this repo> && cd market-base-rates
+git clone https://github.com/poyraz-demir/market-base-rates.git && cd market-base-rates
 python -m venv .venv && . .venv/bin/activate
 pip install pandas openpyxl xlrd          # or: pip install -e ".[dev]"
 python fetch.py                           # downloads the Yahoo Finance daily series into data/cache/
