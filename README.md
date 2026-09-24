@@ -20,6 +20,7 @@ python -m venv .venv && . .venv/bin/activate
 pip install pandas openpyxl xlrd          # or: pip install -e ".[dev]"
 python fetch.py                           # downloads the Yahoo Finance daily series into data/cache/
 python run_all.py                         # writes results/*.csv, results/SUMMARY.md and refreshes this README
+python docs/build_site.py                 # rebuilds the static page docs/index.html from results/
 pytest                                    # smoke tests + a few known numbers with tolerances
 ```
 
@@ -420,6 +421,7 @@ scripts/0N_*.py     one topic per script, each runnable on its own
 data/raw/           committed source snapshots (see data/SOURCES.md)
 data/cache/         Yahoo Finance series, git-ignored
 results/            CSV tables + SUMMARY.md (all tables, including the ones not shown above)
+docs/               build_site.py renders docs/index.html, a static page, from results/ (python docs/build_site.py)
 tests/              smoke tests and a few pinned numbers
 ```
 
