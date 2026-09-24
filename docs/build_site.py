@@ -801,6 +801,8 @@ HEAD = f"""<!DOCTYPE html>
 <meta property="og:title" content="{esc(TITLE)}">
 <meta property="og:description" content="{esc(DESCRIPTION)}">
 <meta property="og:type" content="article">
+<meta property="og:url" content="https://poyraz-demir.github.io/market-base-rates/">
+<link rel="canonical" href="https://poyraz-demir.github.io/market-base-rates/">
 <meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
